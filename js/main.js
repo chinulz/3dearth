@@ -147,7 +147,7 @@ this.listener_ = new THREE.AudioListener();
 const sound = new THREE.PositionalAudio(this.listener_);
 
 const loader = new THREE.AudioLoader();
-    loader.load('../snd/galaxy.mp3', (buffer) => {
+    loader.load('https://chinulz.github.io/3dearth/snd/galaxy.mp3', (buffer) => {
       setTimeout(() => {
         sound.setBuffer(buffer);
         sound.setLoop(true);
